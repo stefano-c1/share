@@ -179,8 +179,8 @@ with tab2:
     SV_sat = CP.PropsSI("S","T",T_sat+273.15,"Q",1,fluido)/1000
 
     fig = make_subplots(rows = 1,cols = 1)
-    fig.add_trace(go.Scatter(x= SL_sat, y = T_sat, mode = 'lines', line_color = 'white', hoverinfo  = 'x+y'), row = 1, col = 1)
-    fig.add_trace(go.Scatter(x= SV_sat, y = T_sat, mode = 'lines', line_color = 'white', hoverinfo  = 'x+y'), row = 1, col = 1)
+    fig.add_trace(go.Scatter(x= SL_sat, y = T_sat, mode = 'lines', line_color = 'cyan', hoverinfo  = 'x+y'), row = 1, col = 1)
+    fig.add_trace(go.Scatter(x= SV_sat, y = T_sat, mode = 'lines', line_color = 'cyan', hoverinfo  = 'x+y'), row = 1, col = 1)
 
     if calcolo == "Saturazione (p)" or calcolo == "Saturazione (T)":
         fig.add_trace(go.Scatter(x= [SL,SV], y = [T,T], mode = 'lines', line_color = 'tomato', hoverinfo  = 'x+y'), row = 1, col = 1)
